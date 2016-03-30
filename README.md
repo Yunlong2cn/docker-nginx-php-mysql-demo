@@ -23,3 +23,9 @@
 # docker run -it -v /c/Users/Me/docker-nginx-php-mysql-demo/nginx.conf:/etc/nginx/nginx.conf -p 80:80 --name inginx --link iphp --volumes-from iphp nginx
 # docker run -d -v /c/Users/Me/docker-nginx-php-mysql-demo/nginx.conf:/etc/nginx/nginx.conf -p 80:80 --name inginx --link iphp nginx
 ```
+
+以上部分必须先启动 php 容器，才可以启动 nginx 容器，此顺序不能颠倒，这里想要运行一个 php 运行环境仍然是比较费力的一件事情，开心的是 docker 提供了 docker-compose 命令，可以一个命令即可完成上述操作，命令为
+```
+docker-compose up -d
+```
+值得注意的是：使用 docker-compose 需要 docker-compose.yml (为 docker-compose 执行时自动处理的默认模板文件)，关于 docker-compose 看文档 [YAML 模板文件]（https://yeasy.gitbooks.io/docker_practice/content/compose/yaml_file.html）
