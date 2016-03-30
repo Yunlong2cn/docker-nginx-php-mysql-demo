@@ -28,4 +28,4 @@
 ```
 docker-compose up -d
 ```
-值得注意的是：使用 docker-compose 需要 docker-compose.yml (为 docker-compose 执行时自动处理的默认模板文件)，关于 docker-compose 看文档 [YAML 模板文件]（https://yeasy.gitbooks.io/docker_practice/content/compose/yaml_file.html）
+值得注意的是：使用 docker-compose 需要 docker-compose.yml (为 docker-compose 执行时自动处理的默认模板文件)，关于 docker-compose 看文档 [YAML 模板文件](https://yeasy.gitbooks.io/docker_practice/content/compose/yaml_file.html)
